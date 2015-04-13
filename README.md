@@ -8,24 +8,28 @@
 
 用法
 --------------------------------------------------
-（1）初始化：（把目标view作为参数传进去，为了失败重加载需要继承ReloadCallback回调接口）
-### ViewSelectorLayout viewSelectorLayout = new ViewSelectorLayout(getActivity(), targetView);
+### （1）初始化
+（把目标view作为参数传进去，为了失败重加载需要继承ReloadCallback回调接口）
+ViewSelectorLayout viewSelectorLayout = new ViewSelectorLayout(getActivity(), targetView);
 		viewSelectorLayout.setReLoadCallbackListener(this);
 		return viewSelectorLayout;
 	}
-（2）显示目标界面
-### viewSelectorLayout.show_ContentView();
+###（2）显示目标界面
+ viewSelectorLayout.show_ContentView();
 
-（3）显示加载界面
-### viewSelectorLayout.show_LoadingView();
+### （3）显示加载界面
+viewSelectorLayout.show_LoadingView();
 
-（4）显示失败界面
-### viewSelectorLayout.show_FailView();
+###（4）显示失败界面
+ viewSelectorLayout.show_FailView();
 
-(5)显示空界面
-### viewSelectorLayout.show_EmptyView()
+### (5)显示空界面
+viewSelectorLayout.show_EmptyView();
+
+
 	
-	
+效果图
+-----------------------------------------------------------	
 ![](http://www.apkbus.com/data/attachment/forum/201504/03/113645d78y7514el74e1ff.gif)
 
 
